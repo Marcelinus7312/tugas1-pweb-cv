@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Marcelinus Adhipramana Anargya Bhagaskara</title>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation (Flexbox) -->
+    <header class="site-header">
+        <div class="container header-dalam">
+            <div class="brand-logo">
+                <a href="#">MAB<span>.dev</span></a>
+            </div>
+            <nav class="main-nav">
+                <a href="#tentang">Tentang</a>
+                <a href="#pendidikan">Pendidikan</a>
+                <a href="#keahlian">Keahlian</a>
+                <a href="#proyek">Proyek</a>
+                <a href="#kontak" class="btn-nav">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="container">
+        
+        <!-- Hero Section (Flexbox Alignment) -->
+        <section class="hero-section" id="tentang">
+            <div class="hero-content">
+                <span class="badge-role">Information Systems Student</span>
+                <h1>Marcelinus Adhipramana Anargya Bhagaskara</h1>
+                <p class="sub-title"><i class="fa-solid fa-id-card"></i> NIM: A12.2025.07312 | Universitas Dian Nuswantoro</p>
+                <p class="bio-text">
+                    Mahasiswa Sistem Informasi yang berfokus pada pengembangan UI/UX, rekayasa perangkat lunak, dan *web development*. Memiliki ketertarikan kuat dalam membangun antarmuka web yang modern, responsif, serta berorientasi pada pengalaman pengguna.
+                </p>
+                <div class="hero-action">
+                    <a href="#kontak" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Hubungi Saya</a>
+                    <a href="#proyek" class="btn btn-outline"><i class="fa-solid fa-code"></i> Lihat Portofolio</a>
+                </div>
+            </div>
+            <div class="hero-avatar">
+                <div class="avatar-wrapper">
+                    <img src="https://ui-avatars.com/api/?name=Marcelinus+Adhipramana&background=0D6EFD&color=fff&size=256" alt="Avatar Marcelinus">
+                </div>
+            </div>
+        </section>
+
+        <!-- Layout Makro 2-Dimensi (CSS Grid: 2fr 1fr) -->
+        <div class="susunan-konten">
+            
+            <!-- Kolom Utama (2fr) -->
+            <div class="kolom-utama">
+                
+                <!-- Riwayat Pendidikan (Table Data) -->
+                <section class="card-box" id="pendidikan">
+                    <div class="card-header">
+                        <h2><i class="fa-solid fa-graduation-cap"></i> Riwayat Pendidikan</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="custom-table">
+                                <thead>
+                                    <tr>
+                                        <th>Jenjang</th>
+                                        <th>Nama Institusi</th>
+                                        <th>Tahun</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="badge badge-info">S1 Sistem Informasi</span></td>
+                                        <td>Universitas Dian Nuswantoro (UDINUS)</td>
+                                        <td>2025 - Sekarang</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="badge">SMA / Sederajat</span></td>
+                                        <td>SMK Terang Bangsa</td>
+                                        <td>2022 - 2025</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Proyek & Portofolio -->
+                <section class="card-box" id="proyek">
+                    <div class="card-header">
+                        <h2><i class="fa-solid fa-laptop-code"></i> Proyek Showcase</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="grid-proyek">
+                            <div class="project-card">
+                                <h3>Redesign Profile Web</h3>
+                                <p>Mendesain ulang CV statis menjadi responsif menggunakan CSS Grid & Flexbox modern.</p>
+                                <div class="tags">
+                                    <span>HTML5</span>
+                                    <span>CSS3 Grid</span>
+                                    <span>RWD</span>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <h3>UI/UX Mobile App Prototype</h3>
+                                <p>Rancangan antarmuka aplikasi berbasis *user-centered design* untuk studi kasus akademis.</p>
+                                <div class="tags">
+                                    <span>Figma</span>
+                                    <span>Wireframing</span>
+                                    <span>Prototyping</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Sidebar / Kolom Samping (1fr) -->
+            <aside class="kolom-samping">
+                
+                <!-- Keahlian (Skills) -->
+                <section class="card-box" id="keahlian">
+                    <div class="card-header">
+                        <h2><i class="fa-solid fa-layer-group"></i> Keahlian IT</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="skills-list">
+                            <li><i class="fa-brands fa-html5"></i> HTML5 & Semantic Web</li>
+                            <li><i class="fa-brands fa-css3-alt"></i> Modern CSS (Flexbox & Grid)</li>
+                            <li><i class="fa-brands fa-bootstrap"></i> Bootstrap 4 / 5 Framework</li>
+                            <li><i class="fa-brands fa-figma"></i> UI/UX Design & Wireframing</li>
+                            <li><i class="fa-solid fa-code-branch"></i> Git & GitHub Version Control</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Informasi Kontak -->
+                <section class="card-box" id="kontak">
+                    <div class="card-header">
+                        <h2><i class="fa-solid fa-address-card"></i> Kontak</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="contact-info">
+                            <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> 112202507312@mhs.dinus.ac.id</p>
+                            <p><i class="fa-solid fa-location-dot"></i> <strong>Lokasi:</strong> Semarang, Indonesia</p>
+                            <div class="social-links">
+                                <a href="https://github.com" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://linkedin.com" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Marcelinus Adhipramana Anargya Bhagaskara (NIM: A12.2025.07312). Pemrograman Web Dasar UDINUS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
